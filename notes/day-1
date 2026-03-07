@@ -1,0 +1,53 @@
+Variables are containers to store data 
+No need to declare data type (Python figures it out) 
+
+Primitive / Built-in types → int, float, str, bool
+Collection types → list, dict, tuple, set
+
+Python's ACTUAL Data Types
+Type Example Use int a = 10 
+Whole numbers float a = 10.5 
+Decimal numbers str a = "hello" 
+Text/characters bool a = True True or False 
+list a = [1,2,3] Collection of items 
+dict a = {"name":"Joshi"} Key-value pairs 
+tuple a = (1,2,3) Unchangeable list
+
+  # For integer
+age = int(input("Enter age: "))
+
+# For decimal/double → use float NOT double
+price = float(input("Enter price: "))
+
+# For text/char → use str (or nothing, default is str)
+name = str(input("Enter name: "))
+
+# char doesn't exist — a single character is just a string
+letter = input("Enter a letter: ")  # just this is enough
+
+# Variables
+a = 10          # int
+b = 10.5        # float
+c = "Joshi"     # str
+d = True        # bool
+
+# Print
+print("Hello World")
+print(a)
+
+# Input
+name = input("Enter name: ")           # text
+age = int(input("Enter age: "))        # integer
+price = float(input("Enter price: "))  # decimal
+
+# Check data type
+print(type(a))   # shows <class 'int'>
+
+
+
+
+
+
+
+
+  
