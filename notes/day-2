@@ -1,0 +1,302 @@
+# 📘 Day 2 - Python Notes
+### Topics: if, if-else, elif, for loop, while loop
+---
+
+## 1️⃣ IF Statement
+
+### Definition:
+The `if` statement checks a condition. If the condition is **TRUE**, it runs the code inside. If **FALSE**, it skips it.
+
+### Syntax:
+```python
+if condition:
+    # code runs only if condition is true
+```
+
+### Example:
+```python
+n = 10
+if n > 0:
+    print("Number is positive")
+```
+**Output:** Number is positive
+
+---
+
+## 2️⃣ IF-ELSE Statement
+
+### Definition:
+The `if-else` statement gives TWO choices. If condition is **TRUE** → runs if block. If condition is **FALSE** → runs else block.
+
+### Syntax:
+```python
+if condition:
+    # runs if condition is TRUE
+else:
+    # runs if condition is FALSE
+```
+
+### Example:
+```python
+n = int(input("Enter number: "))
+if n % 2 == 0:
+    print(n, "is Even")
+else:
+    print(n, "is Odd")
+```
+**Output (if n=4):** 4 is Even  
+**Output (if n=5):** 5 is Odd
+
+---
+
+## 3️⃣ ELIF Statement (Else If)
+
+### Definition:
+`elif` is used when there are MORE THAN TWO conditions to check. It checks conditions one by one from top to bottom. The FIRST true condition runs, rest are skipped.
+
+### Syntax:
+```python
+if condition1:
+    # runs if condition1 is TRUE
+elif condition2:
+    # runs if condition2 is TRUE
+elif condition3:
+    # runs if condition3 is TRUE
+else:
+    # runs if ALL conditions are FALSE
+```
+
+### Example:
+```python
+marks = int(input("Enter marks: "))
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 80:
+    print("Grade: B")
+elif marks >= 70:
+    print("Grade: C")
+elif marks >= 40:
+    print("Grade: D")
+else:
+    print("FAIL")
+```
+**Output (if marks=85):** Grade: B  
+**Output (if marks=35):** FAIL
+
+---
+
+## 4️⃣ FOR LOOP
+
+### Definition:
+`for` loop is used to repeat a block of code a **fixed number of times**. It goes through each item one by one and stops automatically.
+
+### Syntax:
+```python
+for variable in sequence:
+    # code to repeat
+```
+
+---
+
+### 4a. for i in range()
+
+`range()` generates a sequence of numbers.
+
+| Syntax | Meaning | Output |
+|---|---|---|
+| `range(5)` | 0 to 4 | 0,1,2,3,4 |
+| `range(1, 6)` | 1 to 5 | 1,2,3,4,5 |
+| `range(1, 10, 2)` | 1 to 9, step 2 | 1,3,5,7,9 |
+| `range(10, 0, -1)` | 10 to 1, step -1 | 10,9,8,7,6,5,4,3,2,1 |
+
+### range(start, stop, step) — Explained:
+- **start** → where to begin (default is 0)
+- **stop** → where to stop (this number is NOT included)
+- **step** → how much to jump each time (default is 1)
+
+```python
+# range(1, 10, 2) → starts at 1, stops before 10, jumps by 2
+for i in range(1, 10, 2):
+    print(i)
+# Output: 1 3 5 7 9
+```
+
+```python
+# range(0, 101, 10) → starts at 0, stops before 101, jumps by 10
+for i in range(0, 101, 10):
+    print(i)
+# Output: 0 10 20 30 40 50 60 70 80 90 100
+```
+
+---
+
+### 4b. for i in n (looping through a string or list)
+
+When you write `for i in n` where n is a **string**, it goes through each character one by one.
+
+```python
+# Looping through a string
+name = "Joshi"
+for i in name:
+    print(i)
+# Output:
+# J
+# o
+# s
+# h
+# i
+```
+
+```python
+# Looping through a list
+fruits = ["apple", "banana", "mango"]
+for i in fruits:
+    print(i)
+# Output:
+# apple
+# banana
+# mango
+```
+
+### ⚠️ Difference between for i in range(n) vs for i in n:
+
+| Code | Meaning |
+|---|---|
+| `for i in range(n)` | Loop n number of times (i = 0,1,2...n-1) |
+| `for i in n` | Loop through each character/item IN n |
+
+```python
+n = 5
+
+# for i in range(n) → loops 5 times
+for i in range(n):
+    print(i)
+# Output: 0 1 2 3 4
+
+# for i in "hello" → loops through each letter
+for i in "hello":
+    print(i)
+# Output: h e l l o
+```
+
+---
+
+## 5️⃣ WHILE LOOP
+
+### Definition:
+`while` loop repeats a block of code **as long as a condition is TRUE**. It checks the condition before every repetition. When condition becomes FALSE, loop stops.
+
+### Syntax:
+```python
+while condition:
+    # code to repeat
+    # IMPORTANT: must change variable to avoid infinite loop
+```
+
+### Example:
+```python
+x = 1
+while x <= 5:
+    print(x)
+    x += 1     # x = x + 1 (increases x by 1 each time)
+# Output: 1 2 3 4 5
+```
+
+### ⚠️ VERY IMPORTANT — Infinite Loop:
+If you forget to change the variable, the loop runs FOREVER and crashes your program!
+```python
+# WRONG - infinite loop ❌
+x = 1
+while x <= 5:
+    print(x)
+    # forgot x += 1 → x stays 1 forever!
+
+# CORRECT ✅
+x = 1
+while x <= 5:
+    print(x)
+    x += 1
+```
+
+---
+
+## 6️⃣ BREAK and CONTINUE
+
+### BREAK — Stops the loop completely:
+```python
+for i in range(10):
+    if i == 5:
+        break        # stops when i reaches 5
+    print(i)
+# Output: 0 1 2 3 4
+```
+
+### CONTINUE — Skips current step, continues loop:
+```python
+for i in range(6):
+    if i == 3:
+        continue     # skips 3, continues rest
+    print(i)
+# Output: 0 1 2 4 5
+```
+
+---
+
+## 7️⃣ Quick Comparison Table
+
+| | IF | IF-ELSE | ELIF | FOR | WHILE |
+|---|---|---|---|---|---|
+| **Purpose** | One condition | Two choices | Many choices | Fixed repeats | Condition repeats |
+| **Stops when** | Condition false | Always runs one | First true condition | Range ends | Condition false |
+| **Use case** | Simple check | Yes/No decision | Grade/Menu | Count loops | Input validation |
+
+---
+
+## 8️⃣ Practice Programs
+
+```python
+# 1. Check voting eligibility
+age = int(input("Enter age: "))
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible")
+
+# 2. Multiplication table using for loop
+num = int(input("Enter number: "))
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)
+
+# 3. Countdown using while
+n = int(input("Enter number: "))
+while n >= 0:
+    print(n)
+    n -= 1
+print("Blast off! 🚀")
+
+# 4. Print odd numbers 1-20 using range with step
+for i in range(1, 21, 2):
+    print(i)
+
+# 5. Loop through your name
+name = input("Enter your name: ")
+for letter in name:
+    print(letter)
+```
+
+---
+
+## 🔗 Blockchain Connection
+
+Smart contracts use conditions and loops constantly:
+```
+if sender_balance >= amount:
+    transfer(amount)
+else:
+    reject transaction
+
+→ This is exactly if-else in Python!
+```
+
+---
+*Day 2 completed — 06 March 2026* 🚀
