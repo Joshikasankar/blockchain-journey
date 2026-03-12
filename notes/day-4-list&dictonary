@@ -1,0 +1,161 @@
+              LIST 
+ What is a List?
+Definition:
+       A list is a collection that stores multiple values in one variable.
+       Items are stored in order and can be changed.
+       Enclose with square bracket []
+Real life example:
+       A shopping list — multiple items in one place, you can add, remove or change items!
+
+Syntax:
+    pythonlist_name = [item1, item2, item3]
+
+    example : 
+     l1=[1,2,3,4,5]
+    names=["jos","yog","anitha","riya","yogi"]
+       mixed=[1,"josi",3,"apple",4,3.5,True]
+----------------------------------------------------------------------------------------------
+Every item in a list has a position number called index. Index always starts from 0!
+
+  List  →  ["apple", "banana", "mango", "grape"]
+  Index →       0        1        2        3
+
+       fruits = ["apple", "banana", "mango", "grape"]
+
+       print(fruits[0])   # apple
+       print(fruits[1])   # banana
+       print(fruits[3])   # grape
+       print(fruits[-1])  # grape  (last item)
+       print(fruits[-2])  # mango  (second last)
+----------------------------------------------------------------------------------------------
+List Methods :
+        fruits = ["apple", "banana", "mango", "grape"]
+       
+          Method                   What it does                                Example
+          append(x)              Adds item at END                          fruits.append("orange")
+          insert(i, x)           Adds at specific position                 fruits.insert(1, "kiwi")
+          remove(x)              Removes specific item                     fruits.remove("apple")
+          pop()                  Removes LAST item                         fruits.pop()
+          pop(i)                 Removes at index i                        fruits.pop(0)
+          sort()                 Sorts list                                numbers.sort()
+          reverse()              Reverses list                             numbers.reverse()
+          len()                  Count of items                            len(fruits)
+          clear()                Removes everything                        fruits.clear()
+
+--------------------------------------------------------------------------------------------------
+ Loop Through List :
+fruits = ["apple", "banana", "mango"]
+
+         # Using for loop
+          for fruit in fruits:
+             print(fruit)
+
+         # Using index
+          for i in range(len(fruits)):
+               print(i, fruits[i])
+                                        # Output:
+                                        # 0 apple
+                                        # 1 banana
+                                        # 2 mango
+  ---------------------------------------------------------------------------------------------------------------------------------------------
+                                        DICTONARY
+  Definition:
+          A dictionary stores data as key-value pairs. Like a real dictionary — you look up a word (key) to find its meaning (value).
+
+  Real life example:
+          Your Aadhar card — Name: Joshi, Age: 20, City: Erode. Each field is a key, each detail is a value!
+  Syntax:
+          dict_name = {"key1": value1, "key2": value2}
+
+example :
+       # Example
+student = {
+    "name": "Joshi",
+    "age": 20,
+    "city": "Erode",
+    "course": "Blockchain"
+}
+-------------------------------------------------------------------------------------
+ Accessing Dictionary :
+      student = {"name": "Joshi", "age": 20, "city": "Erode"}
+
+# Access by key
+print(student["name"])      # Joshi
+print(student["age"])       # 20
+
+# Using get() - safer way
+print(student.get("city"))  # Erode
+print(student.get("phone")) # None (no error!)
+---------------------------------------------------------------------------------------
+Dictionary Methods :
+            Method                                         What it does
+    dict["key"] = value                                   Add or update item
+    del dict["key"]                                       Delete a key
+    dict.keys()                                           Get all keys
+    dict.values()                                         Get all values
+    dict.items()                                          Get all key-value pairs
+    len(dict)                                             Count of items
+-----------------------------------------------------------------------------------------
+  student = {"name": "Joshi", "age": 20}
+
+# Add new key
+student["city"] = "Erode"
+print(student)  # {'name': 'Joshi', 'age': 20, 'city': 'Erode'}
+
+# Update existing key
+student["age"] = 21
+print(student)  # {'name': 'Joshi', 'age': 21, 'city': 'Erode'}
+
+# Delete key
+del student["city"]
+
+# All keys
+print(student.keys())    # dict_keys(['name', 'age'])
+
+# All values
+print(student.values())  # dict_values(['Joshi', 21])
+--------------------------------------------------------------------------------------
+  Loop Through Dictionary :
+            student = {"name": "Joshi", "age": 20, "city": "Erode"}
+
+# Loop through keys
+for key in student:
+    print(key)
+
+# Loop through values
+for value in student.values():
+    print(value)
+
+# Loop through both key and value
+for key, value in student.items():
+    print(key, ":", value)
+# Output:
+# name : Joshi
+# age : 20
+# city : Erode
+ 
+-------------------------------------------------------------------------------------------
+   List                          Dictionary                     
+ Uses `[ ]`                       Uses `{ }`                   
+ Stores values only               Stores **key : value** pairs   
+ Access using index (`0,1,2`)     Access using key (`name, age`) 
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+       
