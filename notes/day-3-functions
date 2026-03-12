@@ -1,0 +1,170 @@
+# 📘 Day 3 - Python Notes
+### Topic: Functions
+---
+
+## 1️⃣ What is a Function?
+        A function is a block of code with a name that you can use again and again. 
+Instead of writing the same code multiple times, you write it once inside a function and just call it whenever needed.
+
+Real life example:
+A washing machine is a function. You just press start (call it). You don't rewrite how it works every time!
+  
+ Why Use Functions?
+- ✅ Write once, use many times
+- ✅ Makes code clean and organized
+- ✅ Easy to find and fix bugs
+- ✅ Smart contracts are 100% built with functions
+
+--------------------------------------------------------------------------------------------------
+
+## 2️⃣ Types of Functions
+
+ Type                                Meaning                                   Example 
+
+Built-in functions           Already available in Python           `print()`, `input()`, `int()`, `len()` |
+User defined functions       You create them yourself                     Using `def` keyword 
+-----------------------------------------------------------------------------------------------------
+
+Creating a Function
+Syntax:
+     python  def function_name(parameters):
+    # code
+    return value
+
+def → keyword to create function
+function_name → you give the name
+parameters → inputs to the function (optional)
+return → sends back a result (optional)
+
+
+```----------------------------------------------------------------------------------------------------
+
+ TYPES OF FUNCTIONS:
+    1.without parameter without return type
+    2.with parameter without return type
+    3.without parameter with return type
+    4.with parameter with return type
+
+Type 1 — No parameter, No return:
+ def greet():
+    print("Hello Joshi!")
+
+    greet()   # calling the function
+                                                                             # Output: Hello Joshi!
+  Type 2 — With parameter, No return:
+def greet(name):
+    print("Hello", name)
+
+greet("Joshi")                                                                 # Output: Hello Joshi
+greet("Kumar")                                                                 # Output: Hello Kumar
+ 
+ Type 3 — With parameter, With return:
+def add(a, b):
+    result = a + b
+    return result
+
+answer = add(5, 3)
+print(answer)    # Output: 8
+      
+Type 4 — Default parameter:
+def greet(name = "Friend"):
+    print("Hello", name)
+
+greet()          # Output: Hello Friend
+greet("Joshi")   # Output: Hello Joshi
+-------------------------------------------------------------------------------------------------
+return vs print
+                                    print                       return
+What it does               Shows on screen                   Sends value back
+Can reuse value?                No✅                              Yes
+Use in smart contracts?         Rarely                            Always
+
+eg : 
+      # print inside function - value lost after
+def add(a, b):
+    print(a + b)     # shows but can't reuse
+
+# return - value saved and reusable
+def add(a, b):
+    return a + b     # sends back result
+
+answer = add(5, 3)   # save it
+print(answer * 2)    # reuse it → 16
+ 
+-----------------------------------------------------------------------------------------------------
+
+---
+
+ 
+----------------------------------------------------------------------------------
+
+## 6️⃣ Edge Case Handling
+
+Always handle unexpected inputs in functions.
+This is extremely important in smart contracts!
+
+python
+def divide(a, b):
+    if b == 0:
+        return "Cannot divide by zero!"  # edge case handled!
+    return a / b
+
+def factorial(n):
+    if n < 0:
+        return "Factorial not possible for negative numbers!"
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+---
+------------------------------------------------------------------------------
+ f-strings (Cleaner way to print)
+
+
+name = "Joshi"
+age = 20
+
+# Old way
+print("My name is", name, "and age is", age)
+
+# f-string way (cleaner and professional!)
+print(f"My name is {name} and age is {age}")
+
+
+-----------------------------------------------------------------------------------------------
+ 
+
+️ Blockchain Connection 🔗
+
+
+# Python function structure
+def transfer(sender, receiver, amount):
+    if sender_balance >= amount:
+        sender_balance -= amount
+        receiver_balance += amount
+        return "Success"
+    return "Failed"
+```
+```
+// Same logic in Solidity (your future!)
+function transfer(address receiver, uint amount) public {
+    require(balance >= amount);
+    balance -= amount;
+}
+```
+
+**Every Ethereum transaction = calling a function on a smart contract!**
+
+---
+
+## 🔑 Key Points to Remember
+
+- `def` keyword creates a function
+- Always handle edge cases (divide by zero, negative numbers)
+- `return` is better than `print` inside functions — value can be reused
+- Parameters go inside `()` when defining
+- Arguments go inside `()` when calling
+- Default parameters are used when no value is passed
+
+---
+*Day 3 completed — 06 March 2026* 🚀
