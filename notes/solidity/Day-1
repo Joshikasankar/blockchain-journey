@@ -1,0 +1,125 @@
+what is Contract?
+     contract is like a class.
+     where variables,funtions are in
+
+      Syntex : 
+            contract contract_name {
+
+             }
+-------------------------------------------
+1. Is pragma = version control?
+      It tells the compiler:
+           Use this version (or range of versions) to compile this contract
+Why specifically the word "pragma"?
+  The word “pragma” comes from “pragmatic”, meaning:
+             Practical instruction for the compiler
+
+So:
+It is used for compiler-related settings
+Not for variables, functions, or logic
+
+Is pragma permanent?
+ "No"
+    It only affects compilation
+    Once compiled, the smart contract bytecode is fixed on blockchain
+
+So:
+It does NOT exist inside the blockchain
+It only helps during development
+---------------------------------------------------------
+What are State Variables?
+
+Definition:
+    State variables = variables that are stored permanently on the blockchain
+
+Simple idea:
+    Like saving data in a database
+    Once stored → it stays forever
+    
+  example : 
+       contract Example {
+          uint myUnsignedInteger = 100;
+    }
+
+       uint → data type (unsigned integer)
+       myUnsignedInteger → variable name
+      = 100 → initial value
+
+       • This value is stored permanently on blockchain
+       • Not temporary like normal programming variables
+
+   Only positive numbers (0, 1, 2, 3...)
+❌ No negative numbers
+
+         uint vs  int
+     Type	                                          Meaning
+     uint	                                    Only positive numbers
+     int                                      Positive + negative numbers
+
+What is uint256?
+In Solidity:
+    uint = uint256
+Meaning:
+  It can store very large numbers
+Uses 256 bits of memory
+------------------------------------------------------
+Smaller Types
+ also use:
+  uint8 → small numbers (0 to 255)
+   uint16
+   uint32
+
+But usually:
+  Use uint (default and safe)
+
+State variable → stored permanently on blockchain
+uint → only positive numbers
+uint = uint256 (big storage)
+Stored inside contract → acts like database
+--------------------------------------------------------------------------
+What is a Struct?
+Definition:
+    A struct is a way to group multiple variables into one.
+
+Simple idea:
+Like a student record
+One student has:
+name
+age
+marks
+Instead of creating separate variables, we group them.
+syntax:
+    struct variable_name{
+        declaration
+    }
+example :
+    struct Student {
+    string name;
+    uint age;
+}
+
+Inside a struct, what do we write?
+
+✔️ Inside a struct, you only declare variables (properties)
+❌ You do NOT write functions or logic
+------------------------------------------------------------------------------
+What is string?
+
+string = text data
+Example:
+string greeting = "Hello world!";
+
+Meaning:
+Variable name → greeting
+Value → "Hello world!"
+🔹 4. Key Points About String
+Stores text (letters, words, sentences)
+Can be any length
+Uses UTF-8 encoding (supports all languages)
+
+Example:
+"Hello"
+"Vanakkam"
+"123" (even numbers as text)
+-------------------------------------------------------------------------------
+
