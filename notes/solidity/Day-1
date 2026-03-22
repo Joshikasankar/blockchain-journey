@@ -102,6 +102,10 @@ Inside a struct, what do we write?
 
 ✔️ Inside a struct, you only declare variables (properties)
 ❌ You do NOT write functions or logic
+
+Struct creates a custom data type.
+Like how uint is a built-in type,
+struct lets YOU create your own type.
 ------------------------------------------------------------------------------
 What is string?
 
