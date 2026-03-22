@@ -126,4 +126,255 @@ Example:
 "Vanakkam"
 "123" (even numbers as text)
 -------------------------------------------------------------------------------
+What is an Array?
+ Definition:
+     Array = a collection of values (same type)
+Simple idea:
+     Instead of one value → store many values in one variable
+
+
+
+array types : 
+1.fixed array
+2.dynamic array
+
+      1.fixed array:  size is fixed.
+                   Example:
+                          uint[2] fixedArray = [10, 20]; -------> only 2 values can store size is fixed
+                          string[5] stringArray;----->output : ["a", "b", "c", "d", "e"]
+
+
+      2.Dynamic array : no fixed size
+                        can grow any time
+
+             example : uint[] dynamicArray;
+
+Array of Structs :
+Person[] people;
+  person is a struct
+  people stores many Person records
+
+Why Dynamic Array is Useful?\
+ Because:
+    Stored on blockchain (state variable)
+    Can store many records
+    Works like a simple database
+
+Public Array : 
+     Person[] public people;
+        Meaning:
+            public makes it visible outside contract
+
+What is Getter Method?
+    Solidity automatically creates a function like:
+    people(0)
+    people(1)
+This allows:
+Other contracts/users can read data ✅
+But cannot directly modify it ❌
+----------------------------------------------------------------------------------------
+Function Structure : 
+   This is a function (like a method in other languages)
+   syntax : 
+        function eatHamburgers(string memory _name, uint _amount) public {
+                    //piece of code
+         }
+
+          function eatHamburgers(...)
+         function → keyword to create a function
+         eatHamburgers → function name
+
+         string memory _name, uint _amount
+     here : 
+           string memory _name
+                 _name → text input (like name)
+           memory → temporary storage
+          uint _amount
+                 _amount → number input
+
+What is memory?
+   memory = temporary storage
+    Simple idea:
+      Data exists only while function runs
+      After function ends → data is gone ❌
+
+
+Why memory is needed?
+   For reference types, Solidity needs to know:
+Where to store data
+    Reference types:
+          string ✅
+          array ✅
+          struct ✅
+
+Two ways data can be given to a function:
+1. Copy (By Value)
+2. Original (By Reference)
+
+ 1. By Value (COPY)
+   Example:
+       x = 10
+You send x to a function → it gets a copy
+
+Inside function:
+    copy = 10 → changed to 20
+    But original:
+      x = 10 (no change)
+      Safe — original not affected
+-------------------------------------------------------------------
+Return Values (Very Clear)
+Example:
+    string greeting = "Hello";
+
+function sayHello() public returns (string memory) {
+    return greeting;
+}
+
+What is happening?
+returns (string memory)
+→ “This function will give back a string”
+return greeting;
+→ sends "Hello" back
+👉 Simple idea:
+     Function gives output
+
+
+Three Types of Functions (MOST IMPORTANT)
+ There are 3 types 👇
+          1.Normal function
+          2.view function
+          3.pure function
+
+     1.Normal Function
+          function changeData() public {
+              greeting = "Hi";
+         }
+
+               This:
+                 Changes data ✅
+               Example:
+                   Like editing your profile name ✏️
+
+     2.view function
+         function sayHello() public view returns (string memory) {
+                return greeting;
+          }
+               This:
+                  Only reads data 👀
+                  Does NOT change anything ❌
+               Example:
+                    Checking your bank balance 💰
+     3.pure function 
+          function multiply(uint a, uint b) public pure returns (uint) {
+                return a * b;
+          }
+                 This:
+                     Does NOT read data ❌
+                     Does NOT change data ❌
+                     Only uses inputs
+                 Example:
+                        Calculator 🧮
+
+| Function Type | Reads Data | Changes Data |
+| ------------- | ---------- | ------------ |
+| Normal        | ✅          | ✅            |
+| view          | ✅          | ❌            |
+| pure          | ❌          | ❌            |
+----------------------------------------------------------------------------------------------
+What is keccak256?
+  Simple meaning:
+         It converts input → into a random-looking number
+      example : 
+             keccak256(abi.encodePacked("aaaab"));
+
+             "aaaab" ------------>This is just input data (string)
+          abi.encodePacked------------>Convert "aaaab" into bytes format   (because keccak256  only accepts bytes)
+
+          keccak256(...)
+              This is also syntax, but meaning is:
+              Take input → generate hash (random-like number)
+-----------------------------------------------------------------------------------------
+Typecasting
+   Typecasting = changing one data type to another
+      example:
+            uint8 a = 5;
+            uint b = 6;
+           uint8 c = a * b; // ❌ error
+
+     Why error?
+      a * b → result is uint
+      But storing in uint8 → mismatch ❌
+
+Solution (Typecasting)
+     uint8 c = a * uint8(b);
+      Now:
+          b is converted to uint8
+           No error ✅
+
+What is uint8?
+ Definition:
+     uint8 = unsigned integer with 8 bits size
+
+Simple Meaning
+      uint → number (only positive)
+      8 → size (8 bits)
+So:
+uint8 = small positive number
+
+Range of uint8
+ It can store values from:
+
+0 to 255
+ Why?
+
+8 bits → 2⁸ = 256 values
+Starts from 0 → ends at 255
+
+ uint8 a = 10;   // ✅ valid
+uint8 b = 255;  // ✅ valid
+uint8 c = 300;  // ❌ error (too big)
+
+List of Unsigned Integers
+
+👉 Solidity provides:
+
+uint8
+uint16
+uint24
+uint32
+...
+uint256
+
+👉 It increases in steps of 8 bits
+
+
+uint8 a = 255;        // small numbers
+uint16 b = 1000;      // bigger
+uint32 c = 100000;    // even bigger
+uint d = 999999;      // very large (uint256)
+
+| Type      | Range           |
+| --------- | --------------- |
+| `uint8`   | 0 – 255         |
+| `uint16`  | 0 – 65,535      |
+| `uint32`  | bigger          |
+| `uint256` | very very large |
+
+Why so many types?
+
+👉 To save memory (gas)
+
+Small number → use uint8 ✅
+Big number → use uint256 ✅
+
+
+
+
+
+
+
+
+
+
+
 
