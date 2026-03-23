@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MyProfile{
+     uint public age = 21;
+     string public name = "joshika";
+     bool public isStudent = true ;
+
+    struct college{
+        string CollegeName;
+        string location;
+        uint totalStudents;
+    }
+}
