@@ -8,7 +8,48 @@ contract MyProfile{
      function add()public view returns(uint){
         return n1 + n2;
      }
-     
+}
 
-   
+
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MyProfile{
+     uint public n1 = 45;
+      
+     
+     function oddEven()public view returns(string memory){
+        if(n1 % 2==0){
+            return "even";
+        }
+          else{
+            return "odd";
+        }
+     }  
+}
+
+
+
+
+
+
+pragma solidity ^0.8.0;
+
+contract reverseNumbers {
+    uint public n = 12345;
+
+    function reverse() public pure returns(uint) {
+
+        uint temp = 12345;
+        uint split = 0;
+
+        while (temp != 0) {
+            uint rem = temp % 10;
+            split = split * 10 + rem;
+            temp = temp / 10;
+        }
+
+        return split;
+    }
 }
