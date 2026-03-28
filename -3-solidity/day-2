@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract MyProfile{
+     uint public n1 = 100;
+     uint public n2=100;
+     
+     function add()public view returns(uint){
+        return n1 + n2;
+     }
+     
+
+   
+}
