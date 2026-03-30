@@ -1,0 +1,11 @@
+contract reverse{
+    function reverseNumber(uint n)public pure returns(uint){
+            uint sum = 0;
+            while(n!=0){
+                uint rem=n%10;
+                sum=sum + rem;
+                n=n/10;
+            }
+            return sum;
+    }
+}
