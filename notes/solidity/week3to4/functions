@@ -1,1 +1,53 @@
+What is a Function?
+     A function is a block of code that performs a specific task when called.
+     Similar to functions in programming languages like Python or C.
+
+
+Basic Syntax
+function functionName(parameters) visibility stateMutability returns(returnType) {
+    // logic
+}
+Function Name :
+           The name used to call the function
+           Example: add, checkAge
+
+Parameters (Input) :
+            Values passed into the function
+            function add(uint a, uint b)
+            a and b are parameters
+
+Visibility :
+    Defines who can call the function
+               public → anyone can call
+               private → only inside the contract
+               internal → inside contract + derived contracts
+               external → only from outside
+
+State Mutability :
+        Defines how the function interacts with blockchain data:
+          view → reads state, does not modify
+          pure → does not read or modify state
+          (none) → can modify state
+
+Return Values :
+       Specifies what the function returns:
+       returns(uint)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
