@@ -1,0 +1,60 @@
+What is an Array in Solidity?
+     An array is a collection of elements of the same type stored together.
+
+            uint[] numbers;------->This means: a list of unsigned integers.
+
+Types of Arrays
+✅ (A) Fixed-size Array
+  Size is defined at declaration.
+                uint[5] public nums = [1, 2, 3, 4, 5];
+            Size = 5 (cannot change)
+            Stored permanently (if state variable)
+
+(B) Dynamic Array :
+      Size can grow or shrink.
+   uint[] public nums;
+              Size changes
+              Most commonly used
+--------------------------------------------------
+Adding Elements (Push) : 
+              nums.push(10);
+              nums.push(20);
+                Adds values to the end
+------------------------------
+Accessing Elements : 
+          uint value = nums[0];
+          Index starts from 0
+------------------------------
+Updating Elements :
+    nums[0] = 100;
+--------------------------------
+Removing Elements :
+    Method 1: pop()
+       Removes last element
+           nums.pop();
+
+    Method 2: delete
+      Resets value to default (does NOT reduce length)
+           delete nums[0];
+          If uint → becomes 0
+-----------------------------------
+Array Length
+    uint len = nums.length;
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
