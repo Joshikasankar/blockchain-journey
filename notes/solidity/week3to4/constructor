@@ -1,1 +1,49 @@
+What is a Constructor?
+A constructor is a special function that runs automatically when a contract is deployed. It runs only once and never again.
+
+Syntax :
+    Without parameters :
+           constructor() {
+                // code
+            }
+
+     With parameters :
+      constructor(string memory _name, uint _value) {
+             // code
+         }
+
+Key Points
+   *Only one constructor per contract
+   *Runs automatically at deploy time
+   *No button appears in Remix — it runs silently
+   *Used to set initial values
+
+
+When to use Constructor vs Direct Assignment
+Situation                                Use
+Value is always fixed                 Direct assignment
+Value set by whoever deploys          Constructor with parameters
+Setup logic needed at start           Constructor
+
+-----------------------------------------------------
+If no constructor is written :
+        Solidity automatically adds an empty constructor behind the scenes — so it is optional to write one.
+
+    Point                               Answer
+How many constructors?                  Only 1
+When does it run?                       At deploy time
+Can it run again?                       ❌ Never
+Is it mandatory?                        ❌ Optional
+Button in Remix?                        ❌ No button
+Can take parameters?                    ✅ Yes
+--------------------------------------------------------------------------------------------------------------------------
+main point : solidity automatically create an empty one behind the scenes                                                 |
+So two cases                                                                                                              |
+Case 1 — You don't write constructor → Solidity creates empty constructor automatically -> No values are set at deploy    |
+Case 2 — You write constructor → Your constructor runs at deploy -> Values are set as you defined                         |
+ --------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
