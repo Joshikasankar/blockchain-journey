@@ -19,15 +19,51 @@ Key points :
    Always write require before the logic
    Multiple requires allowed in one function
    Stops early if condition fails — saves gas
+-----------------------------------------------------------------------------------------------
+What is modifier?
+    A reusable require — write once, attach to many functions.
 
+Syntax :
+     modifier modifierName() {
+    require(condition, "error message");
+    _; // run the function after check
+        }
+------------------------------------------
+What is _;?
+_; means "now run the actual function"
 
+Check runs first
+Then _; runs the function
 
+-------------------------------------
+example :
+modifier checkActive() {
+    require(isActive == true, "Not active");
+    _;
+}
 
+// attach to functions
+function deposit(uint amount) public checkActive {
+    balance = balance + amount;
+}
 
+function withdraw(uint amount) public checkActive {
+    balance = balance - amount;
+}
+-------------------------------------------------
+Key points
+     Write modifier once — use on many functions
+     Attach modifier after public keyword
+     Multiple modifiers can be attached to one function
+     _; is mandatory — without it function never runs
+-----------------------------------------------------------
+                                  require                                 modifier
+Write how many times?            Every function                           Once only
+Reusable?                            ❌                                     ✅
+Best for?                        One time checks                          Repeated checks 
+Example                          amount > 0                               isActive check
 
-
-
-
+---------------------------------------------------xxxxx-------------------------------------xxxx---------------------------------------------------------------------
 
 
 
