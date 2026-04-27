@@ -1,0 +1,33 @@
+What is require?
+A condition checker. If condition is false → function stops and shows error.
+
+Syntax :
+         require(condition, "error message");
+
+ How it works :
+     condition true → function continues ✅
+     condition false → function stops + error ❌
+
+Common UseCase :
+    require(amount > 0, "Amount must be greater than 0");
+    require(amount <= balance, "Insufficient balance"); 
+    require(isActive == true, "Not active");
+    require(quantity <= stock, "Not enough stock");
+    require(revenue > cost, "No profit");
+
+Key points :
+   Always write require before the logic
+   Multiple requires allowed in one function
+   Stops early if condition fails — saves gas
+
+
+
+
+
+
+
+
+
+
+
+
