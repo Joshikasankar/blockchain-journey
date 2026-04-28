@@ -1,0 +1,170 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_shopName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_OwnerName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "IsshopOpen",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_revenue",
+						"type": "uint256"
+					}
+				],
+				"name": "ProfitOrLoss",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "d",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "shopName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "OwnerName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "items",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "revenue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "ShopOpen",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "restockItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "revenue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "priceperItem",
+						"type": "uint256"
+					}
+				],
+				"name": "sellItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ShopInventory.sol": "ShopInventory"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ShopInventory.sol": {
+			"keccak256": "0x021970d977105d1abddce3b97f971a7108deb777eab66b76877df47c1954f004",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://376c7bdc5ad1e58119f0e80cbcfeec8d2caf09c605d3b30741829dfce0898fc4",
+				"dweb:/ipfs/QmQ3PYoKKAczpe2ia4H6TEM3GwxQrMV9k7obTCcKgqVbof"
+			]
+		}
+	},
+	"version": 1
+}

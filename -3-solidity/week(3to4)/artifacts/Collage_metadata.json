@@ -1,0 +1,172 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "collage",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "principal",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "cd",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ColageName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "CollagePrincipal",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalStudent",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalFees",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOpen",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "collectFees",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "fees",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "student",
+						"type": "uint256"
+					}
+				],
+				"name": "feesPerStudent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "removeStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "studentCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalFees",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Collage.sol": "Collage"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Collage.sol": {
+			"keccak256": "0xc08dd4709e7d542f2614f0b8d58261de45a03ed21c017bf4f0fe2347aaf1ad05",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d4d67b0660a3fb8ef12897c0ac1db85856ff655b658a07cae6333fd809cf4d29",
+				"dweb:/ipfs/QmPpj4V2Vwq3TVCzt1AgjzVcRKmgCKYxJUQrBRD3qXtkfU"
+			]
+		}
+	},
+	"version": 1
+}

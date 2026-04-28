@@ -1,0 +1,116 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "shopName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ownername",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "count",
+						"type": "uint256"
+					}
+				],
+				"name": "addItems",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sd",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ShopName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "OwnerName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "items",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOpen",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalItems",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Shop.sol": "Shop"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Shop.sol": {
+			"keccak256": "0x651a04ddf1b342fa11866c0bbfa19f4c8fea17b02d24ce9bae2eb7a41c0fde91",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2a948203e931e7a0d71749ce54c2e008fa15242bf99646c74b9aa8cd0b947c79",
+				"dweb:/ipfs/QmTWmexadoGjSomCgbTQ2Ka82ihy4XPvuhi8CU7rsgE37y"
+			]
+		}
+	},
+	"version": 1
+}

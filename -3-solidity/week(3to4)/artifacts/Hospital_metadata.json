@@ -1,0 +1,123 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "hospitalName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "doctorname",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "day",
+						"type": "uint256"
+					}
+				],
+				"name": "CalculateBill",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admitpatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "d",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "hospitalName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "DoctorName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "patientCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "EmergencyOpen",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "discharge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Hospital.sol": "Hospital"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Hospital.sol": {
+			"keccak256": "0x5781068093050d17a716bc1448908fab4ee19135ea858caabbaba80196b3bbde",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e6fb9d924f752c2534c4e26dcaeceb8f96f6ba14b690c862909790a6da74aaed",
+				"dweb:/ipfs/QmSnRVWx2oKtXTe76XtVkoXkz3KxM74dkgQL8tk4cHZrfC"
+			]
+		}
+	},
+	"version": 1
+}
