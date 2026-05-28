@@ -16,5 +16,26 @@ Syntax :
             names[1]="riya";
             name[2]="sam";
       retriving :
-            
+            names[index];
+
+-----------------------------------------------------------------------
+Array functions :
+              push--->add element at end
+              pop---->remove last
+              length-->length of the array (array size)
+
+      fixed                        dynamic
+ string[4] arr                   string[] arr
+ fixed size                      unlimited size
+ use by index                    use push 
+ size never changes              size changes
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
       
