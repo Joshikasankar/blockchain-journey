@@ -1,0 +1,20 @@
+what is Arrays?
+   Arrays are group of similar data types.
+   there is two types of arrays,
+                  1.fixed array ---->  size can be fixed at start.
+                  2.Dynamic array--->  size can be grow or shrink anytime
+
+Syntax :
+     //fixed array
+      string[6] names;
+    //Dynamic array
+      string[] names;
+  [the values are stored and retrive by index values]
+  eg :
+      storeing:
+            names[0]="bob";
+            names[1]="riya";
+            name[2]="sam";
+      retriving :
+            
+      
