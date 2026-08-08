@@ -97,8 +97,44 @@ Why use custom errors :
     * can pass paramaters.
     * more professional.
     * used in real production contracts.
+-------------------------------------------------
+Example :
 
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
+contract ErrorHandling {
+    uint public balance = 1000;
+    bool public isActive = true;
+
+    // custom error
+    error InsufficientBalance(uint available, uint required);
+    error AccountNotActive();
+
+    // require
+    function deposit(uint amount) public {
+        require(isActive == true, "Account not active");
+        require(amount > 0, "Amount must be greater than 0");
+        balance += amount;
+    }
+
+    // revert
+    function withdraw(uint amount) public {
+        if(!isActive) {
+            revert AccountNotActive();
+        }
+        if(amount > balance) {
+            revert InsufficientBalance(balance, amount);
+        }
+        balance -= amount;
+    }
+
+    // assert
+    function divide(uint a, uint b) public pure returns(uint) {
+        assert(b != 0);
+        return a / b;
+    }
+}
 
 
 
