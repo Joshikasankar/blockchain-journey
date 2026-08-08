@@ -1,1 +1,10 @@
+in javascript comment using ----> //
+DataTypes :
+     string
+     Number
+    Boolean
+    undifined
 
+ to find the type of data :  ----------> typeof _data----> eg : typeof 18 -->'number'
+
+            
