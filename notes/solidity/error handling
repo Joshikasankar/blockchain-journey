@@ -1,0 +1,110 @@
+Error Handling 
+     what is it?
+          controlling what happens when something goes wrong in your contract.
+for eg :
+   entering wrong pin :   it shows "Wrong pin entered" message.
+   withdraw more than balance : it shows "Insufficient balance"
+   ATM is out of cash : "Service unavailable"
+
+without error handling :
+   function withdraw(uint amount) public {
+    balance -= amount;     //  what if amount > balance? Contract crashes!
+    }
+
+with error handling : 
+    function withdraw(uint amount) public {
+    require(amount <= balance, "Insufficient balance");    // handled!
+    balance -= amount;
+      }
+
+----------------------
+Types of Error Handling
+------------------------
+       1. require   ----->  check the user input
+       2.  revert  ------>  complex conditions
+       3.  assert ------> internal bugs
+
+       
+1.require :
+       checks a condition - if false,stops function and shows error message.
+       
+ Syntex : 
+      require(condition, "error message");
+
+ eg :         
+    function deposit(uint amount) public {
+    require(amount > 0, "Amount must be greater than 0");
+    balance += amount;
+}
+   when to use :
+        * while chcking user input.
+        * checking balance.
+        * checking permissions.
+        * most common error handling method.
+-------------------------
+2.revert :
+     stop functions and reverts all changes - same as require but use if statement.
+     
+Syntex :
+    revert("error message");
+
+    eg : 
+       function withdraw(uint amount) public {
+    if(amount > balance) {
+        revert("Insufficient balance");
+    }
+    balance -= amount;
+      }
+   When to use :
+    * complex conditions that needs if statement
+    * multiple conditions to check.
+    * when require syntax is not enough.
+  -------------------------------
+  3.Assert :
+       checks for internal bugs - should never be false.if false - something is seriously wrong.
+
+  Syntex :
+       assert(condition);
+
+example :
+      function divide(uint a, uint b) public pure returns(uint) {
+    assert(b != 0); // b should NEVER be 0
+    return a / b;
+      }
+When to use :
+    * check for bugs in your own code.
+    * checking invariants.(things that always be true)
+    * never for user input checking 
+
+---------------------------------
+Custom errors :
+    more gas efficient than string error messages.
+
+Syntax :
+  // declare custom error
+           error InsufficientBalance(uint available, uint required);
+
+// use with revert
+           function withdraw(uint amount) public {
+                if(amount > balance) {
+                       revert InsufficientBalance(balance, amount);
+                    }
+                  balance -= amount;
+            }
+
+Why use custom errors :
+    * cheaper gas than string messages.
+    * can pass paramaters.
+    * more professional.
+    * used in real production contracts.
+
+
+
+
+
+
+
+
+
+
+       
