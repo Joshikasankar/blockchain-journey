@@ -40,9 +40,13 @@ String methods :
      a = "MaThematics";
         console.log(a.toLowerCase()) ---> output : mathematics
    ---------------------------------------------------------------------     
+ 7.includes("_string") ------> checks if the chatacter or string is present or not
+                              it gives the output in boolean
 
-
-
+     a = "mathematics";
+        console.log(a.includes("mat")) ---->true
+---------------------------------------------------------------------------
+ 8.split() ------------> 
 
 
            
