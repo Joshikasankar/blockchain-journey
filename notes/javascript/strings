@@ -1,0 +1,48 @@
+Strings
+     // to find length of the string :
+                    variable_name.length;
+              eg :
+                 a = "blockchain";
+                 console.log(a.length);  //output-->10
+                 itn count includes space;
+---------------------------------------------------------------------------------------------------------------
+String methods :
+   1. charAt(_index); ----->the zero based index of the desired character.
+                      return the charcater at the specified character.
+       eg :
+           a = "blockchain";
+           console.log(a.charAt(4)); --->output : k
+------------------------------------------------------------------                          
+  2.indexOf();----->shows positions of the first index.
+      eg : 
+        a = "mathematics";
+        console.log(a.indexOf("at"));---->output : 1 ('a' is position)
+        console.log(a.indexOf("ati"));---->output : 6 ('ati' is start at 6th position)
+--------------------------------------------------------------------
+  3.lastIndexOf();---->it shows position from last occurance.
+        a = "Mathematics";
+          console.log(a.lastIndexOf("at"))---->output : 6
+ --------------------------------------------------------------------         
+  4.slice(); -----> slicing the string from starting index to end-1.
+       a = "mathematics";
+         console.log(a.slice(5,8)); ---> output : mat
+                             | |
+                             | |------end -1 
+                             |--------starting index value
+
+          console.log(a.slice(5)); ---> output : matics (starting index to end) if no end is given
+ --------------------------------------------------------------------- 
+  5.toUpperCase() ----> change the string to capital.
+      a = "Mathematics";
+        console.log(a.toUpperCase()) ---> output : MATHEMATICS
+  ---------------------------------------------------------------------
+  6.toLowerCase()------> change the string to smaller letters.
+     a = "MaThematics";
+        console.log(a.toLowerCase()) ---> output : mathematics
+   ---------------------------------------------------------------------     
+
+
+
+
+
+           
