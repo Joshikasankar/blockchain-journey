@@ -32,4 +32,8 @@ DataTypes :
 
  to find the type of data :  ----------> typeof _data----> eg : typeof 18 -->'number'
 
-            
+alert();
+it executes in orderwise eg : 
+          if i decleare a script in html page and new new external in new page
+          first i will put <script src = "sript.js"></script>--->it executes first.
+          then remaining.
