@@ -1,0 +1,60 @@
+NodeJs :
+ it is a open source Environment.
+ it used for running the javascript outside the server.
+Node js is a v8 engine if javascript.
+
+What is Node.js?
+  *Node.js is a JavaScript runtime environment built on Chrome's V8 engine.
+  *It lets JavaScript run outside the browser (mainly server-side).
+  *Created by Ryan Dahl in 2009.
+  *Node.js = V8 engine + extra APIs (file system, networking, etc.)
+   Key Characteristics
+
+1. Single-threaded
+   > Runs on a single main thread.
+   > Handles concurrency via the event loop and async callbacks.
+
+2. Non-blocking I/O (Asynchronous)
+  >File read, DB query, network calls — all I/O operations are non-blocking.
+  >One request doesn't wait for another to finish — improves performance.
+  >Main reason Node.js is fast for I/O-heavy applications.
+
+3. Event-Driven Architecture
+   >Works on events + callbacks.
+   >Uses the EventEmitter pattern internally.
+
+4. Event Loop (important topic)
+   >Call Stack → Node APIs → Callback Queue → Event Loop → back to Call Stack
+   >Manages all asynchronous operations.
+   >Phases: Timers → Pending Callbacks → Poll → Check → Close Callbacks.
+
+5. NPM (Node Package Manager)
+  * Comes bundled with Node.js.
+  * World's largest software package registry.
+  * Install packages with: npm install <package-name>
+  * Core Built-in Modules
+          Module	                   Use
+           http	               Create web servers
+            fs	               File system operations
+           path	                Handle file paths
+          events	              Event emitter
+           os	                  OS-level information
+           crypto              	Hashing / encryption
+
+Simple Example — HTTP Server
+
+ const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello from Node.js!');
+});
+
+server.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
+
+Why Node.js Matters for Blockchain Dev
+Hardhat, Truffle, Ethers.js, Web3.js — all run on Node.js.
+Smart contract deployment scripts are written in JS/Node.
+Backend for dApps (APIs connecting to blockchain) commonly uses Node.js + Express.
