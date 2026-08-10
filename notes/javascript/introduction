@@ -6,7 +6,7 @@
       -features.
 
 (ES5,ES6)
-
+-------------------------------------------------------------------------
 java script :
       Java Script makes the website intractive.
      Logic of the website initially created to make web page come alive.
@@ -23,7 +23,13 @@ Javascript Engine :
    * reads the script.
    * convert the script to machine code.
    * runs, pretty fast.
-in javascript comment using ----> //
+------------------------------------------------------------------
+in javascript comments :
+   * Single line comment : // ---->comment it the single line 
+     Shortcut key -----> (ctrl + /).select whole line and comment.
+   * Multi Line comment; /* */ -----> comment the multiple lines.
+     Shortcyt key ----->(shift + alt + a).select multiple line and comment.
+---------------------------------------------------------------------------
 DataTypes :
      string
      Number
