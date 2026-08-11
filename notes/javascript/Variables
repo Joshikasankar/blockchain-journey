@@ -57,4 +57,28 @@ output :                          ___
    9007199254740992    // correct 0  |
    9007199254740992    // wrong   1  |----------> only even positions are correct
     9007199254740994   // correct 2  | 
-                                 ____
+                                  ___
+In BigInt if we add any number with it the number also in bigint 
+       to change the number in bigInt last need to add 'n';
+ eg :
+    let limit = 9007199254740991n;
+    
+        console.log(limit + 1n); 
+        console.log(limit + 2n); 
+        console.log(limit + 3n); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
