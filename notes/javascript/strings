@@ -1,4 +1,6 @@
 Strings
+   * In string we can use both single and double quotes.
+   * Back tick also used.  ----> `Josh said "i have a pen which is yojo's"`
      // to find length of the string :
                     variable_name.length;
               eg :
@@ -46,7 +48,9 @@ String methods :
      a = "mathematics";
         console.log(a.includes("mat")) ---->true
 ---------------------------------------------------------------------------
- 8.split() ------------> 
-
-
+             Embeding :  
+            -----------
+let a = "thank you";
+console.log(`1 + 2 = ${1+2}`);----->output: 1 + 2 = 3
+console.log(`1 + 2 = ${a}`);----->output : 1 + 2 = thank you
            
