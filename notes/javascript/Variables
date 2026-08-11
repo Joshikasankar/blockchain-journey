@@ -3,15 +3,15 @@ variables :
  * var
  * let  -------> mostly used
  * const ----> it makes the varible's value constant.
------------------------------------------------------
+--------------------------------------------------------
 Hard Coded :
 giving instand value to the variable is called hard coded.
 haed coded words are written in captital letters
------------------------------------------------------
+---------------------------------------------------------
 Escape Sequesnces :
     1)\n -------------> new line
     2)\t -------------> tab space
---------------------------------------------------------
+---------------------------------------------------------
 rules for variable declaration :
    * variable names not be repeat.must be unique
    * only two special characters are allowed ($ _).
@@ -20,13 +20,41 @@ rules for variable declaration :
    -------------------------------------------------------
 keywords : 
    keywords are reserved words.
+----------------------------------------------------------
+1.                data type ---->              |Number|
 
+Infinity -----> number.
+-Infinity ----> number.
+NaN ---> Not a Number. it data type also a number.
+---------------------------------------------------------
+NaN :
+   If anything like string or number done a operations with NaN it becomes NaN.
+   except one operation with value --> NaN**0;
+       eg :
+            operations         output
+            NaN + 2 -----------> NaN
+            NaN ** 1-----------> NaN
+            NaN /2 ------------> NaN
+       but, 
+           NaN ** 0 ----------->1 because anything power 0
+   if , console.log(1/0);----
+                             |
+                              ---> it wont shows error. it shows Infinity.
+======================================================================                  
+      2)  BigInt
+   ----------------
+   BigInt means storing a bigger values.
+   why BigInt :
+           In number data type there is a limit for memory aloccation.
+           In BigInt can store big numbers and do operations 
+      Eg :
 
-
-
-
-
-
-
-
-
+        console.log(9007199254740991 + 1); 
+        console.log(9007199254740991 + 2); 
+        console.log(9007199254740991 + 3); 
+   
+output :                          ___
+   9007199254740992    // correct 0  |
+   9007199254740992    // wrong   1  |----------> only even positions are correct
+    9007199254740994   // correct 2  | 
+                                 ____
