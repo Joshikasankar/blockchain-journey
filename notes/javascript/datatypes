@@ -1,0 +1,24 @@
+1.Boolean data type 
+     written only true or false 
+     mostly used in checking the conditions.
+2.null value 
+    let age  = null;
+  null means empty 
+  
+  3.undefined datatype
+        only inilitizing the variable but not assigned.
+         it wont show null if the value not assigned to a variable.
+          let age;
+         console.log(age);------>output : undefinied
+  
+  diff between null  and undefined :
+          null  -----> it is defined by us.if it may any future use for that variable it is assigned as null.
+          undefined ---> if the variable not initialize with variable its datatype is undefined.
+------------------------------------------------------------------------------------------------
+            In javaScript it converts one data type to another datatype
+                 eg :
+                myName ="joshika";
+                console.log(typeof myName) --------> string
+                myName = 234;
+                console.log(typeof myName)-------->number
+            
