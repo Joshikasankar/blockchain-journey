@@ -1,1 +1,32 @@
+variables :
+   variables are containers used to store the values.
+ * var
+ * let  -------> mostly used
+ * const ----> it makes the varible's value constant.
+-----------------------------------------------------
+Hard Coded :
+giving instand value to the variable is called hard coded.
+haed coded words are written in captital letters
+-----------------------------------------------------
+Escape Sequesnces :
+    1)\n -------------> new line
+    2)\t -------------> tab space
+--------------------------------------------------------
+rules for variable declaration :
+   * variable names not be repeat.must be unique
+   * only two special characters are allowed ($ _).
+   * variable name should not start with numbers.but it used middle and end.
+   * keywords are not allowed as a variable name.
+   -------------------------------------------------------
+keywords : 
+   keywords are reserved words.
+
+
+
+
+
+
+
+
+
 
