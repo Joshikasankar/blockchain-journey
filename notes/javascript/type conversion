@@ -1,0 +1,60 @@
+  TYPE CONVERSION 
+     console.log(28); ------> here every thing written into the console.log() is a string
+if the compiler converts the data type into another  automatically is called implict.
+
+For some operator it converts autmatically :
+   EG : 
+      console.log('12' / '2');----->output : 6
+      console.log('12' * '2'); ----->output : 24
+      console.log('12' - '2');----->output : 20
+
+For addition it concat : 
+      console.log('12' / '2');----->output : 122
+-------------------------------------------------------------------
+conversion of string :
+        by default what erver we print in console it take as string.
+     also, if we need to convert to string 
+            use the method,
+                   String(variable_name);
+        eg :
+         
+        let n = 23;
+        n = String(n);
+        console.log(typeof n);
+// boolean
+    let isAdult = true;
+     isAdult = String(isAdult);
+      console.log(typeof isAdult);---->string
+
+    let isAdult =null;
+isAdult = String(isAdult);
+console.log(isAdult);
+
+------------------------------------------------------
+convering to Number 
+ syntax :
+         Number(variable_name);
+         eg :
+                 let n = '23'
+                     n = Number(n);
+                    console.log(n + 3) ------->output : 26
+//string 
+       let n = "true";
+      let n = Number(n);
+      console.log(typeof n); ----> Number
+      console.log(n); ------> NaN (Not a Number)
+// boolean
+       let n = true;
+      let n = Number(n);
+      console.log(typeof n); ----> Number
+      console.log(n); ------> 1 
+//null
+    let n = null;
+      let n = Number(n);
+      console.log(typeof n); ----> Number
+      console.log(n); ------> 0
+  //string with char 
+       let n = '23k'
+              n = Number(n);
+              console.log(typeof n); ----> Number
+              console.log(n + 3) ------->output : NaN
