@@ -1,0 +1,63 @@
+                      MODEL WINDOW
+===================================================================
+
+POPUP 's
+   1) alert
+   2) prompt
+   3) confirm
+   These are the entry points. if the action completed, then it show the webpage or else wait until user clicking ok or cancel.
+   
+                
+                ALERT AND PROMPT
+              =====================
+ getting input from user is called prompt.
+Syntax :
+   let variable_name = prompt();
+    
+     Example code :
+           
+     <html>
+     <script>
+        alert("this is just an alert.");
+       let name =  prompt("enter your name"); ----->it is in string type 
+       console.log(name);
+     </script>
+     </html>
+
+    *  here if we enter the input in prompt it take input as string.
+    *  if we didnt give anything and gave escape it took as "null".
+    *  if just clicked  "ok" it take as empty string. 
+    ----------------------------------------------------------
+    Default Arguement :
+               let name =  prompt("enter your name","18");
+    -----------------------------------------------------------
+                      CONFIRM
+                      ========
+   it returns the boolean value in the console.
+  
+            //confirm
+            let st = confirm("Are you student");
+            console.log(st);
+
+   // trivia 1
+        let name = prompt("Enter your name");
+        console.log(name);
+        let prove = confirm(`is this your name : ${name}`)
+        console.log(prove);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
