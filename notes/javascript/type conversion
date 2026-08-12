@@ -58,3 +58,24 @@ convering to Number
               n = Number(n);
               console.log(typeof n); ----> Number
               console.log(n + 3) ------->output : NaN
+
+Null               0
+true               1
+false              0
+undefined          NaN   (Not a Number)
+Number             same Number
+-----------------------------------------------------------
+Conversion to Boolean
+   
+     
+
+ 
+
+
+
+
+
+
+
+
+
