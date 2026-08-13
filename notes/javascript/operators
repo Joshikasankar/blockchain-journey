@@ -29,21 +29,103 @@ Types of Operators :
     Eg :
       let a = b = c = 12; ----->chaining assignment.
                        
+4)comparision operator :
+           it performs between two operands. it returns only bo0lean values.
+            (>,<,<=,>=.==,!=)
+
+          let a = 20;
+          let b = 10;
+          console.log(a>b); ---------->true
+what if we compare string : it compare with the unidigit of the character.
+            let a = 'apple'; 
+            let b = 'mango';
+             console.log(a>b);----->false
+                                    because : a = 97 ,m = 110 (97 > 110).
+     another method :
+                 let a = 'apple'; 
+                 let b = 'appls';
+             console.log(a>b);----->false
+                                    because : e = 102 ,s =116  (102> 116).
+          if length is diff but word is same :
+           let a = 'apple'; 
+            let b = 'appl';
+             console.log(a>b);----->true
+                                    because : 'a' length is greater than 'b'.
+wha if it has capital letter :
+           let a = 'Apple'; 
+            let b = 'mango';
+             console.log(a>b);----->false
+                                    because : A = 65 ,m = 110 (97 > 110).
+
+what if the number is given as string and to compare :
+               if the number is given as string it automatically convert the string to number type.
+                EG :
+                     let a = '21'; 
+                     let b = '32'; if this gave as b = 32; the reult is same
+             console.log(a>b);----->false
+
+                what if one input is given as boolean.
+                      let a = false;
+                      let b = 0;
+                     console.log(a == b); ------->true
+
+                     let a = true;
+                      let b = 2;
+                     console.lo  g(a == b); -------->false
 
 
+                      let a = '0';
+                      a = Boolean(a);
+                      
+                      let b = 0;                              
+                      b = Boolean(b);                       |---------------here 0 is false  
+                     console.log(a == b); ------> false     |
+                                         because : true , false 
+                                                     |
+                                                     |  -------here becase if the string is empty it return false, if the string has any letters or numbers it is true.
+
+------------------------------------------------------------------------------
 To check the datatype of both values ---> ===; (strict equality)
     =     assgnment 
    ==   checking the values are equal  (type cinversion is done automatically)
   ===   check the datatype and value  (compare without type conversion)
 
+            console.log(0 == '0'); ----------> it returns true. because it automatically convert string to number.
 
+comparing null and unefined :
+     console.log(null == undefined); ------> true
+     console.log(null === undefined); ------> false                      
+    comparing  null and undefined always true remaining false.
 
+((if null is converted to number it value  = 0))
+((if undefined is converted to number it value = NaN))
 
+console.log(null< = 0) ----> true.
+console.log(null> = 0) false.
+console.log(null == 0) true
 
+console.log(undefined< = 0) ----> false.
+console.log(undefined> = 0) false.
+console.log(undefined == 0) false
 
+console.log(null == undefined); true (follwed by  rule)
+-----------------------------------------------------------------------------------------------------------------
+ 5 . conditional
+     checking the coditions it is combination of relational and comparision.
+    1) if
+    1) if else
+     3) else if
 
+let isAdult= false;
+ let age = 19;
+   if(age >18){
+        isAdult = true;
+      }
+     console.log(isAdult);  ------> true
 
-
-
-
-
+     6. conditional operator   ----> ?
+                let age = 23;
+                 let person = (age>18) ? "adult" : "child";----> adult
+         Mult condition checking
+                     let age  = 12;
+                     let person = (age >18)? "adult" : (age>12)? "teenage" : "child";
