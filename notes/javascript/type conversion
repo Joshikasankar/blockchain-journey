@@ -67,10 +67,32 @@ Number             same Number
 -----------------------------------------------------------
 Conversion to Boolean
    
-     
+     In boolean converting any number into boolean type is always true except 0.
+      both positive and negative numbers are true, 0 alone false;
+      1 ----> true 
+      0 ----> false
+      Example :
+              let x = 23;  or let x = -27;  same output true 
+              x = Boolean(x);
+              console.log(x); ---->output:true
 
- 
+                 let x = 0;  
+              x = Boolean(x);
+              console.log(x); ---->output:false
+        in js if we pass any string it is always true even space also. if the string is empty it shows false.
 
+        EG :
+            let x = "apple";
+            x = Boolean(x);
+            console.log(typeof x); ----->output : true
+
+            let x = "";
+            x = Boolean(x);
+            console.log(typeof x); ----->output : false
+
+            let x = " "; ----> even it consider space.
+            x = Boolean(x);
+            console.log(typeof x); ----->output : true
 
 
 
