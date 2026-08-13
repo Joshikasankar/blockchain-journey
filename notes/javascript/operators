@@ -8,4 +8,38 @@ Types of Operators :
      1.Unary Operator.
          Unary operator --> performing a task between one operand is called unary
           eg :
-            let x = -1 
+            let x = 1 
+             x = -x; ------>output : -1
+         unary ++ can also convert string to number.
+         EG :
+            let a = '10' ; b=  '20';
+             let c = +a + +b;
+             console.log(c); -----> output : 30
+
+     2. Binary Operator :
+            operator performing a task between two operands is called Binary Operator.
+            +.-,*,/,%,**
+            eg 
+               let a = 12 ; b = 12;
+               let c = a + b;
+               console.log(c);   -------> outpt : 24
+    
+     3.Assignment Operator :
+               assinging the value to variable.
+    Eg :
+      let a = b = c = 12; ----->chaining assignment.
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
