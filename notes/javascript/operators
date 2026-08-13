@@ -31,6 +31,10 @@ Types of Operators :
                        
 
 
+To check the datatype of both values ---> ===; (strict equality)
+    =     assgnment 
+   ==   checking the values are equal  (type cinversion is done automatically)
+  ===   check the datatype and value  (compare without type conversion)
 
 
 
