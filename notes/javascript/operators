@@ -1,0 +1,11 @@
+                        OPERATORS
+                      =============
+// 7 + 11 = 18;
+// 7 and 11 are operands
+// + and = are operators
+
+Types of Operators :
+     1.Unary Operator.
+         Unary operator --> performing a task between one operand is called unary
+          eg :
+            let x = -1 
