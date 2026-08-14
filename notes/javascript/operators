@@ -148,12 +148,20 @@ Logical Operator :
 checking the number with OR :
             console.log(0 || 23);  ------> output : 23
             console.log(12 || 23); ------>12
-            console.log("" || 23);
+            console.log("" || 23);----->23
    Here in 1st Zero,null means false so it returns 23.
     except zero it print the first value.
 
 
-
+       AND :
+           it will check the both conditions and return the last condition.
+              console.log(12 && 13)  ----> 13
+            but, except 
+                       console.log(0 && 13)---->0
+         NOT     :
+                   console.log(!0); --->1
+                       console.log(!134)--->false any number is false
+                         console.log(!0) ----> true 
 
 
 
