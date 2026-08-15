@@ -164,7 +164,8 @@ checking the number with OR :
                          console.log(!0) ----> true 
 
 
-
+      NULL COALESCING :
+               null coalescing means 
 
 
 
