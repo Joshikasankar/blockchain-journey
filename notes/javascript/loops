@@ -36,6 +36,77 @@
              }
       
 
+// factorial with for loop.
+       let n =2;
+       let fact =1;
+       for(let i = 1;i<=n;i++){
+          fact = fact*i;
+          }
+         console.log(fact);
+
+// factorial with while loop.
+ let n = 4;
+  fact =1;
+  let i =1;
+   while( i<=n){
+          fact = fact*i;
+          i++;
+   }
+console.log(fact);
+------------------------------------------------------------------
+Jumps Statements :
+  // continue,break.
+ 
+ Break :
+     it breaks the loop , when the given condition is true and print the result
+   Example :
+          let n1 = 4;
+          for(let i = 1;i<=n1;i++){
+              if(n == 3){
+                   break;
+             }
+             }
+           console.log(sum); --------->output :  1 2 
+
+Continue :
+      it skips the current iteration and move to next iteration si called continue.
+       Example :
+          let n1 = 4;
+          for(let i = 1;i<=n1;i++){
+              if(n == 3){
+                   continue;
+             }
+             }
+           console.log(sum); --------->output :  1 2 4 (skip three and print)
+
+switch :
+      one variable but differemt value can ne solved by switch.
+      it run eith the same data type.
+      input is given in string but cases are given in number will not be acceptable.
+    Example :
+  // switch
+ let op ='+';
+let a= 10;
+let b = 2;
+ switch(op){
+     case '+':
+          console.log(a+b);
+          break;
+     case '-':
+          console.log(a-b);
+          break;
+     case '/':
+          console.log(a/b);
+          break;
+     case '*':
+          console.log(a*b);
+          break;
+     case '%':
+          console.log(a%b);
+          break;
+     default :
+        console.log("invalid input");
+ }
 
 
 
