@@ -1,0 +1,48 @@
+ Iterative statements :
+     1)while
+     2) do while ---->entry-controlled loop
+     3)for loop -----> exit-controlled loop
+
+1. while loop :
+          in while loop first it checks the conditions,if the condition is true
+          it execute the block of statement.
+          if the condition is false it cant go inside the loop.
+
+     while(condition){
+        // block of statement
+          }
+
+      EG :
+        let n = 1;
+       while(n<=10){
+        console.log(n);
+          n++;----> increamenting.
+        }
+-----------------------------------------------------------------
+2.Do While loop :
+      First it execute the statement then it checks the condition.
+      atleast it runs the loop one time.
+     execute the statement then check the conditions.
+
+     Syntax :
+           do {
+              // block of statement
+            }while(conditions)
+
+3.for loop :
+        syntax :
+            for(initialization ; condition ; increament/decreament){
+                  //block of statement
+             }
+      
+
+
+
+
+
+
+
+
+
+
+
