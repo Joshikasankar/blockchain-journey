@@ -165,9 +165,15 @@ checking the number with OR :
 
 
       NULL COALESCING :
-               null coalescing means 
-
-
+               null coalescing means If the given value is null or undifined it prints the alternate value whicj is given.
+              Sysntax :
+                    value ?? alternative_value;
+           EG :
+            let age = null;
+            console.log(age ?? "it is null");  --------->output : it is null
+// trivia
+ console.log(null || 0 || undefined) ---> output : undefined , null = false,0 = false,undefined  = true.
+ 
 
 
 
