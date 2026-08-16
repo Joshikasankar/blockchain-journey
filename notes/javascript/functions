@@ -66,4 +66,35 @@ function declaration :
                 console.log(oddEv(22));
 
 
-          
+          // function assigning to variable :
+            let oddEven = function (n){
+                    if(n%2 == 0){
+                         return "even";
+                           }
+                         return "odd";   // ---> it executes and come out of the block and wont execute the remaining parts.
+                }
+                
+              console.log(oddEven(22)); 
+    ----------------------------------
+Arrow or Nameless function :
+           
+          it us used when we write a single line of code.
+     Syntax :
+         let variable_name = (parameters...) => condition or code ;
+     Example :
+           // arrow or nameless function
+           let oddEven = (a) => a%2 == 0 ? "even": "odd";
+            console.log(oddEven(123))
+----------------------------------------
+call back 
+    passing the function as a parameter.
+    
+
+
+
+
+
+
+
+
+
