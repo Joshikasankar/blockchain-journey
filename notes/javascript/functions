@@ -31,10 +31,39 @@ suppose,
            console.log((v1 + v2)/2);
           }
         operation(2);   ----->NaN   because here the value is assigned to v1 not v2.
+-------------------------------------------------------------------------------------------------
+Scope of Variables :
+    it is used when  inside the function declaration variables are not accessed by outside of the function.
+      * local variable
+      * global variable
 
-  
-
-
+local variable :
+         variable which are defined inside the block or inside the function is called local variable.
+Global variable : 
+             the variable can be accessed from anywhere.
+     Example :
+          // function for odd or even using function
+               function oddEven(n){
+                    if(n%2 == 0){
+                         return "even";
+                           }
+                         return "odd";  ---> it executes and come out of the block and wont execute the remaining parts.
+                }
+              console.log(oddEven(22));
+--------------------------------------------------------------------
+function declaration :
+          assigning the function to the variable.
+          after writing the function , it assign to the variable.
+     Example :
+         // function for odd or even using function
+               function oddEven(n){
+                    if(n%2 == 0){
+                         return "even";
+                           }
+                         return "odd";   // ---> it executes and come out of the block and wont execute the remaining parts.
+                }
+                let oddEv = oddEven;
+                console.log(oddEv(22));
 
 
           
