@@ -86,11 +86,22 @@ Arrow or Nameless function :
            let oddEven = (a) => a%2 == 0 ? "even": "odd";
             console.log(oddEven(123))
 ----------------------------------------
-call back 
+call back  :
+    * function called as a parameter in other function.
+    * getting a function and call as a parameter.
+
     passing the function as a parameter.
-    
+    // function call back 
+      function operation(op,a,b){
+            return  op(a,b);
+         }
+     let add = (a,b) => a+b;
+     let sub = (a,b) => a-b;
 
-
+     console.log(operation(add,10,10));
+// trivia qustion :
+let multi = (n) =>  n*5;  
+console.log(multi(5));
 
 
 
