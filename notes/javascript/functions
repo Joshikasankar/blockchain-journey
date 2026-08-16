@@ -1,0 +1,40 @@
+                       FUNCTION
+Function :
+      * function is mainly used for code reusability.
+      * write once use many times.
+      * functions are also called methods.
+ Syntax :
+        function Function_name(parameters){  -----> function declaration.
+         // block of code
+         }
+function_name(parameter1,parameter2); ---->function call
+
+ Example :
+       function operation(v1,v2){
+           console.log((v1 + v2)/2);
+          }
+       operation(10,20); ---->output : 15
+       operation(20,2); ----->output : 11
+        operation(2);   ----->output : NaN
+
+                                                 
+                               |------->default value if the second value not be assigned means it use this default value.
+    function operation(v1,v2 = 20){
+           console.log((v1 + v2)/2);
+          }
+         
+           operation(10,20); ---->output : 15
+           operation(2);   ----->output : 20
+
+suppose,
+      function operation(v1 = 12,v2){
+           console.log((v1 + v2)/2);
+          }
+        operation(2);   ----->NaN   because here the value is assigned to v1 not v2.
+
+  
+
+
+
+
+          
