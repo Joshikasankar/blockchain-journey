@@ -9,12 +9,12 @@ declaring a object :
          let a  = {};
          console.log(typeof a);  ------> output : object
 // object :
-let food = {
-        fruits : "apple,mango , strawberry,banana",
+  let food = {
+        fruits : "apple, mango , strawberry,banana",
         veggi : "carrot,beatroot,cabbage",
         price : 2000
-};
-console.log(food);
+       };
+  console.log(food);
 
 // extracting a particular value from the object
 let food = {
@@ -102,7 +102,18 @@ it returns the boolean type
 console.log("name" in names);
 --------------------------------------------------------------------------------
                                 For loop
+it print the key values 60
+let names ={
+        name : "joshika",
+        age :20,
+        department : "IT"
+};
+ names.initial = "R S";
+console.log(names);
 
+for(key in names){
+        console.log(names[key]);
+}
 
 
 
