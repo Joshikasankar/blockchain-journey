@@ -57,8 +57,21 @@ let rawveggi = "carrot,beans,sweetpotato";
 
        delete food.price;
        console.log(food);
-
-
+-------------------------------------------------------------------------------
+// adding a new element to the object :
+ syntax :
+     object_name[key] = value
+Example :
+     food['protin'] = 'egg,meat,panner';
+        console.log(food);
+-----------------------------------------------------------------------------
+// updating the element
+              food.price = 3000;
+              console.log(food);
+------------------------------------------------------------------------------
+// adding function to the object
+     this = > refer to current object.
+     
 
 
 
