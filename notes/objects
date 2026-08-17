@@ -42,8 +42,21 @@ if the key has a space it mast be given in string.
          price : 2000
           };
          console.log(food["veggi"]);
+---------------------------------------------------------------
+Deleting a element in object :
+Syntax :
+    delete object_name.key;
 
+let rawveggi = "carrot,beans,sweetpotato";
+ let food = {
+        fruits : "apple,mango , strawberry,banana",
+        "veggi" : rawveggi+",beatroot,cabbage",
+        price : 2000
+     };
+       console.log(food["veggi"]);
 
+       delete food.price;
+       console.log(food);
 
 
 
