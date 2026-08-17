@@ -1,0 +1,56 @@
+Objects :
+      it is also a data type.
+      it act as key and value pairs.
+      in objects keywords are also used as keys.
+      if the key has a space it mast be given in string.
+declaring a object :
+          // objects 
+         let a  = {};
+         console.log(typeof a);  ------> output : object
+// object :
+let food = {
+        fruits : "apple,mango , strawberry,banana",
+        veggi : "carrot,beatroot,cabbage",
+        price : 2000
+};
+console.log(food);
+
+// extracting a particular value from the object
+let food = {
+        fruits : "apple,mango , strawberry,banana",
+        veggi : "carrot,beatroot,cabbage",
+        price : 2000
+  };
+console.log(food.veggi);
+--------------------------------------------------------------------
+In objects variables are allowed for values in objects :
+ Example :
+    let rawveggi = "carrot,beans,sweetpotato";
+ let food = {
+        fruits : "apple,mango , strawberry,banana",
+        veggi : rawveggi+",beatroot,cabbage",
+        price : 2000
+     };
+       console.log(food.veggi);
+----------------------------------------------------------------------------
+if the key has a space it mast be given in string.
+
+         let rawveggi = "carrot,beans,sweetpotato";
+         let food = {
+         fruits : "apple,mango , strawberry,banana",
+         "veggi" : rawveggi+",beatroot,cabbage",
+         price : 2000
+          };
+         console.log(food["veggi"]);
+
+
+
+
+
+
+
+
+
+
+
+
