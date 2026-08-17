@@ -71,7 +71,23 @@ Example :
 ------------------------------------------------------------------------------
 // adding function to the object
      this = > refer to current object.
-     
+     let rawveggi = "carrot,beans,sweetpotato";
+ let food = {
+        fruits : "apple,mango , strawberry,banana",
+        "veggi" : rawveggi+",beatroot,cabbage",
+        price : 2000,
+
+        // defining a function
+         priceadd(price){
+            return this.price +=2;
+         }
+     };
+       console.log(food["veggi"]);
+
+       console.log(food);
+        food.price = 3000;
+        console.log(food);
+        console.log(food.priceadd(11))--> 11 is default value.
 
 
 
