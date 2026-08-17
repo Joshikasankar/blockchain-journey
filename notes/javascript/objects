@@ -89,10 +89,19 @@ Example :
         food.price = 3000;
         console.log(food);
         console.log(food.priceadd(11))--> 11 is default value.
-
-
-
-
+-----------------------------------------------------------------------------------
+                              IN OPERATOR
+ 
+It check the properties in the object. the given property is there.
+it returns the boolean type 
+    let names ={
+        name : "joshika",
+        age :20,
+        department : "IT"
+};
+console.log("name" in names);
+--------------------------------------------------------------------------------
+                                For loop
 
 
 
