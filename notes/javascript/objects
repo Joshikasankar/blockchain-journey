@@ -3,6 +3,7 @@ Objects :
       it act as key and value pairs.
       in objects keywords are also used as keys.
       if the key has a space it mast be given in string.
+      objects can be created without class.
 declaring a object :
           // objects 
          let a  = {};
