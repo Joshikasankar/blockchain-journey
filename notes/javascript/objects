@@ -115,5 +115,7 @@ for(key in names){
         console.log(names[key]);
 }
 
-
+--------------------------------------------------------------------------------
+object by reference
+          
 
