@@ -1,5 +1,5 @@
-                        OPERATORS
-                      =============
+                                        OPERATORS
+                                     =============
 // 7 + 11 = 18;
 // 7 and 11 are operands
 // + and = are operators
@@ -133,10 +133,10 @@ let isAdult= false;
 Logical Operator :
        Logical operators :
                AND,OR,NOT,NULL Coalescing
-     OR     |    AND         |     NOT 
- A   B   O  |   A   B   O    | A   O
- 1   1   1  |   1   1   1    | 1   0
- 1   0   1  |   1   0   0    | 0   1
+     OR     |       AND      |     NOT 
+ A   B   O  |   A   B   O    |    A   O
+ 1   1   1  |   1   1   1    |    1   0
+ 1   0   1  |   1   0   0    |    0   1
  0   1   1  |   0   1   0    |
  0   0   0  |   0   0   0    |
 
