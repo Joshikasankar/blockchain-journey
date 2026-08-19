@@ -33,13 +33,13 @@ What is Node.js?
   * World's largest software package registry.
   * Install packages with: npm install <package-name>
   * Core Built-in Modules
-          Module	                   Use
-           http	               Create web servers
-            fs	               File system operations
-           path	                Handle file paths
+         Module	                   Use
+          http	                Create web servers
+          fs	                  File system operations
+          path	                Handle file paths
           events	              Event emitter
-           os	                  OS-level information
-           crypto              	Hashing / encryption
+          os	                  OS-level information
+          crypto              	Hashing / encryption
 
 Simple Example — HTTP Server
 
