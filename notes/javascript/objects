@@ -100,6 +100,21 @@ it returns the boolean type
         department : "IT"
 };
 console.log("name" in names);
+---------------Another Example---------------------------------
+let food = {
+       fruits : ("apple"),
+       veggis :("carrot"),
+       nuts : ("cashew")
+};
+
+console.log(food.fruits);
+ food.fruits = "strawberry"; 
+console.log(food);
+delete food.nuts;
+console.log(food);
+// in operator
+console.log("fruits" in food);
+console.log("nuts" in food);
 --------------------------------------------------------------------------------
                                 For loop
 it print the key values 60
@@ -114,7 +129,14 @@ console.log(names);
 for(key in names){
         console.log(names[key]);
 }
-
+let food = {
+       fruits : ("apple"),
+       veggis :("carrot"),
+       nuts : ("cashew")
+};
+for(key in food){
+        console.log(key , '-',food[key]);
+}
 --------------------------------------------------------------------------------
 object by reference
           
