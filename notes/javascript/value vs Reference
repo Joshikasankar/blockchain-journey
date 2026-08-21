@@ -1,1 +1,73 @@
             Value VS Reference
+ let a= {
+    name : "joshika",
+    age : 20
+};
+let b = a;
+console.log(a,b);
+b.age = 21;
+console.log(a,b);
+
+Output :
+     { name: 'joshika', age: 20 } { name: 'joshika', age: 20 }
+     { name: 'joshika', age: 21 } { name: 'joshika', age: 21 }
+
+
+What if changing the whole object instead of changing the properties :
+            it create a new object does not affect the another one. 
+
+
+In javascript datas are stored in two different types :
+      1)primitive types (values are stored as copy).
+      2)Reference Type (Address/ it copy like a reference).
+
+ 1)primitive types :
+            number, string, boolean, undefined, null, symbol, bigint.
+                        Example :
+                               let x = 10;
+                               let y = x;
+                               y = 20;
+                               console.log(x, y); // 10 20 — x  value doesnt change!
+
+ 2)Reference types
+            object, array, function
+            this copy the address of the value but not copy the actual memory.
+            Example :
+               let a = { name: "joshika", age: 20 };
+               let b = a;   //  key point
+                        Here, b = a means, a's object is not copied to b, it only poit to yhe memory of a.
+                   a ----\
+                          \--> { name: "joshika", age: 20 }  (same object in memory)
+                    b ----/
+
+
+Const in object :
+        if we try to change the whole object . it throws error.
+        but we can change the properties of the object.
+
+     Example changing the whole object :
+             const a  = {name :"josh",age : 22,passion : "blockchain developer"};
+              a = {};
+              console.log(a);
+      // output :Error
+                Assignment to constant variable.
+                at Object.<anonymous> 
+
+            Changing the properties :
+                   const a  = {name :"josh",age : 22,passion : "blockchain developer"};
+                   a.passion = "Blockchain Auditor";
+                   console.log(a);  
+                       // output :
+                        { name: 'josh', age: 22, passion: 'Blockchain Auditor' }
+--------------------------------------------------------------------------------
+                        Garbage Collection
+                    ==========================
+ It frees the unusable variable and unusable memory
+
+
+
+
+   
+
+
+
