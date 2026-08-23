@@ -1,0 +1,14 @@
+                Arrays in JS
+            ====================
+    * Here, array can store different data types.
+    * it can be accessed with index.
+Syntax :
+  let variable_name = new Array();  or  let variable_name = [];
+
+let veggies = new Arrays();        or   let veggies = [];
+
+let veggis = new Array();
+console.log(typeof veggis);  ----->output : object
+
+veggis = ['carrot','beatroot'];
+console.log(veggis) ---->[ 'carrot', 'beatroot' ]
