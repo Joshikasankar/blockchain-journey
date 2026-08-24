@@ -69,8 +69,15 @@ for(veg of vegas){
     console.log(veg);
 }
 
-
-
+----------------------------------------
+Two Dimensional Array
+*matrix*
+let mat = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+console.log(mat[2][2]);  -----> 9
 
 
 
