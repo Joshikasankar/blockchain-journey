@@ -1,7 +1,10 @@
-                Arrays in JS
-            ====================
+                           Arrays in JS
+                       ====================
     * Here, array can store different data types.
     * it can be accessed with index.
+    * it allow the object also.,
+    * function can be decleared within the array.
+
 Syntax :
   let variable_name = new Array();  or  let variable_name = [];
 
@@ -12,3 +15,27 @@ console.log(typeof veggis);  ----->output : object
 
 veggis = ['carrot','beatroot'];
 console.log(veggis) ---->[ 'carrot', 'beatroot' ]
+
+// it allows any data types :
+    let Arr = ["mango",null,undefined,23,"carrot"];
+    console.log(Arr[1]); ----->output : null
+
+// allows object also :
+let Arr1 = [{name : "joshika",age : 25},"mango",null,undefined,23,"carrot"];
+console.log(Arr1[0]);
+
+// accessing the object element :
+     let Arr2 = [{name : "joshika",age : 25},"mango",null,undefined,23,"carrot"];
+    console.log(Arr2[0].name);
+
+// adding the function to the array :
+  let Arr3 = [{name : "joshika",age : 25},function add(a,b){return a+b},"mango",null,undefined,23,"carrot"];
+    console.log(Arr3[1](1,3));
+
+
+
+
+
+
+
+
