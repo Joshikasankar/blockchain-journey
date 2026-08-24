@@ -32,6 +32,69 @@ console.log(Arr1[0]);
   let Arr3 = [{name : "joshika",age : 25},function add(a,b){return a+b},"mango",null,undefined,23,"carrot"];
     console.log(Arr3[1](1,3));
 
+-----------------------------------------------------
+
+// adding the element to the array
+let veggi = ['carrot','beetroot'];
+ veggi[2] = "beans"; 
+ console.log(veggi[2]);
+
+ // another method 
+ let veggi1 = ['carrot','beetroot'];
+ veggi1.push("beans") ; ------> add the element at last. 
+ console.log(veggi);
+
+// unshift ----> add the element at the first
+ let veggi2 = ['carrot','beetroot'];
+  veggi2.unshift("beans");
+
+   console.log(veggi2); -------> output : [ 'beans', 'carrot', 'beetroot' ]
+
+// removing the element in the array:
+ let veggi3 = ['carrot','beetroot'];
+ veggi3.pop(); ------> remove the last element in the array.
+ console.log(veggi3);
+
+
+// removing the first element :
+ // shift is used to remove the first element
+let veggi4 = ['carrot','beetroot','onion'];
+ veggi4.shift();
+ console.log(veggi4);
+
+---------------------------
+accessing all elements in the array : ---> for loop , of
+let vegas  = ["apple",234,'swallow',23.45,"carrot"]
+for(veg of vegas){
+    console.log(veg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
