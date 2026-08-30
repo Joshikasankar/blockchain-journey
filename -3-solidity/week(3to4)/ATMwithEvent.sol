@@ -6,7 +6,7 @@ contract ATM{
         string public userName;
         uint public balance;
        bool isActive;
-
+     
         constructor(string memory _bankName,string memory _username){
             bankName=_bankName;
             userName=_username;
