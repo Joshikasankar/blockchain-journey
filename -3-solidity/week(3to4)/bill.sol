@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 contract Bill{
-    struct inVoice {
+    struct inVoice {        
         string sellername;
         string buyername;
         uint amount;
